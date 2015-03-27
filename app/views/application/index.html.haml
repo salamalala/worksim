@@ -1,0 +1,58 @@
+%header
+  =image_tag("dxw-logo.png", class: "logo") 
+%main
+  %h1 Calculate the cost of your hosting:
+
+  
+  .question
+    %h3 What type of sites are you using?
+
+    %form{:action => "", :method => "get", :name => "sites"}
+      %br
+        %input{:checked => "", :name => "option1", :type => "checkbox", :value => "Temporary Campaigns"}
+          Temporary Campaigns
+          %br
+        %input{:name => "option2", :type => "checkbox", :value => "Consultation websites"}
+          Consultation websites
+          %br
+        %input{:name => "option3", :type => "checkbox", :value => "Corporate intranets"}
+          Corporate intranets
+          %br
+        %input{:name => "option3", :type => "checkbox", :value => "Multi-site installations"}
+          Multi-site installations
+          %br
+
+
+  .estimation_box
+    %h3 Your estimated costs per month:
+    
+    .costs  
+      £150
+
+  %h3 Fill out the following questions to calculate it yourself
+
+  .question
+    %h3 How many visits do you have per days?
+
+    %form{:action => "", :method => "get", :name => "sites"}
+      %br
+        %input{:checked => "", :name => "option1", :type => "checkbox", :value => "Less than 1000"}
+          Less than a 1000 visits
+          %br
+        %input{:name => "option2", :type => "checkbox", :value => "Between a 1000 and 50'000"}
+          Between a 1000 and 50'000 visits
+          %br
+        %input{:name => "option3", :type => "checkbox", :value => "Between 50'000 and 200'000"}
+          Between 50'000 and 200'000 visits
+          %br
+        %input{:name => "option3", :type => "checkbox", :value => "Over 200'000"}
+          Over 200'000 visits
+          %br  
+
+  %footer
+    &copy; dxw 2015 
+    %br
+    Have any questions? Call us on 0345 257 7520
+    
+
+     
